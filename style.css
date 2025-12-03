@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0d0f14;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+h1 {
+    color: #7dd3fc;
+    font-size: 32px;
+    text-shadow: 0 0 8px #38dbf8, 0 0 16px #38bdf8;
+    border-right: 2px solid #38dbf8;
+    padding-right: 6px;
+    animation: cursorBlink 0.7s infinite;
+}
+
+@keyframes cursorBlink {
+    0% { border-color: #38bdf8;}
+    50% { border-color: transparent;}
+    50% { border-color: #38dbf8;}
+}
